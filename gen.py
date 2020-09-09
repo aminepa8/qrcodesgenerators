@@ -20,6 +20,7 @@ for line in Lines:
     qr.make(fit=True)
     img = qr.make_image(fill_color="black", back_color="white")
     filename = line.strip()+".png"
-    img.save("qr_codes/"+filename)
+    img.save("qr_codes/"+filename) #create a folder named qr_codes in the same folder as the script
+
     qr=""
     img=""
